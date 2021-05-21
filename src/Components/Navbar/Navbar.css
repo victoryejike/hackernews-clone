@@ -1,0 +1,25 @@
+.navbar-container {
+  background-color: #ff6600;
+  padding: 2px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-links,
+.home-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.navbar-links > div:not(:first-child) {
+  margin-right: 10px;
+  border-right: 1px solid black;
+  padding-right: 10px;
+}
+
+.login {
+  padding-right: 10px;
+}
