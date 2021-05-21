@@ -1,0 +1,23 @@
+.content-container {
+  background-color: #f6f6ef;
+  font-size: 13px;
+  padding-bottom: 10px;
+}
+
+.list-container {
+  margin-left: 20px;
+  padding-top: 15px;
+}
+
+.news-title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+span {
+  padding-left: 4px;
+}
+
+.statistics {
+}

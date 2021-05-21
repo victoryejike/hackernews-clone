@@ -1,7 +1,7 @@
 .footer-container {
-  border-top: 1px solid #ff6600;
+  border-top: 2px solid #ff6600;
   text-align: center;
-  margin-top: 10px;
+  padding-top: 10px;
   font-size: 11.5px;
   background-color: #f6f6ef;
   padding-bottom: 20px;
