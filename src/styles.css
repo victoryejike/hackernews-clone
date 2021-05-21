@@ -6,9 +6,9 @@
 
 .App {
   font-family: sans-serif;
-  /* text-align: center; */
   font-size: 14px;
   width: 83%;
   margin: 0 auto;
   padding-top: 10px;
+  min-height: 100vh;
 }
