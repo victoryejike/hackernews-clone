@@ -7,7 +7,19 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
   /* line-height: -10px; */
+}
+
+.news-listing {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.news-title > div {
+  padding-right: 10px;
 }
 
 span {
@@ -16,5 +28,17 @@ span {
 
 .statistics {
   display: inline-block;
-  margin-top: -20px;
+  margin-left: 25px;
+  /* margin-top: -20px; */
+}
+
+div > p {
+  padding-left: 45px;
+  padding-top: 15px;
+  font-size: 17px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(39, 38, 38);
 }

@@ -6,13 +6,16 @@ const useDataFetcher = (type) => {
 
   useEffect(() => {
     getStories(type)
-      .then((stories) => {
-        setStories(stories);
+      .then((fetchedStories) => {
+        console.log(fetchedStories);
+        setStories(fetchedStories);
       })
       .catch((error) => {
         console.log(error);
       });
   }, [type]);
+
+  //console.log(stories);
 
   return { stories };
 };

@@ -1,9 +1,13 @@
 import axios from "axios";
-import { axiosInstance } from "./axios-config";
+//import { axiosInstance } from "./axios-config";
+
+//console.log(axiosInstance.baseURL);
 
 const getStory = async (id) => {
   try {
-    const story = await axios.get(`${axiosInstance}/item/${id}.json`);
+    const story = await axios.get(
+      `https://hacker-news.firebaseio.com/v0/item/${id}.json`
+    );
     return story;
   } catch (error) {
     console.log(error, "cannot load stories");
@@ -13,14 +17,14 @@ const getStory = async (id) => {
 export const getStories = async (type) => {
   try {
     const { data: storyIds } = await axios.get(
-      `${axiosInstance}/${type}stories.json`
+      `https://hacker-news.firebaseio.com/v0/${type}stories.json`
     );
     //console.log(storyIds);
-    const stories = await Promise.all(
+    const storiesList = await Promise.all(
       storyIds.slice(0, 20).map((storyId) => getStory(storyId))
     );
-    console.log(stories);
-    return stories;
+    //console.log(storiesList);
+    return storiesList;
   } catch (error) {
     console.log(error, "An Error occurred, try again in 5secs");
   }

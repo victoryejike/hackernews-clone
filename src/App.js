@@ -13,7 +13,7 @@ export default function App() {
       <Navbar />
       <MainContent>
         <Switch>
-          <Route path="/" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route path="/:type" render={(props) => <ShowStories {...props} />} />
           {/* <Route path="/:past" render={(props) => <ShowStories {...props} />} /> */}
         </Switch>
