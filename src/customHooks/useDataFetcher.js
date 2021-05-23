@@ -14,7 +14,7 @@ const useDataFetcher = (type) => {
       });
   }, [type]);
 
-  return stories;
+  return { stories };
 };
 
 export default useDataFetcher;

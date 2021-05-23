@@ -15,9 +15,11 @@ export const getStories = async (type) => {
     const { data: storyIds } = await axios.get(
       `${axiosInstance}/${type}stories.json`
     );
+    //console.log(storyIds);
     const stories = await Promise.all(
       storyIds.slice(0, 20).map((storyId) => getStory(storyId))
     );
+    console.log(stories);
     return stories;
   } catch (error) {
     console.log(error, "An Error occurred, try again in 5secs");

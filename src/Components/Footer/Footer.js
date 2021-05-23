@@ -15,7 +15,7 @@ const Footer = () => {
         <div>Contact</div>
       </div>
       <div className="footer-searchbox">
-        <label for="search">Search: </label>
+        <label htmlFor="search">Search: </label>
         <input type="search" name="search" />
       </div>
     </footer>

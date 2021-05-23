@@ -17,7 +17,7 @@ const Navbar = () => {
           <Link to="/new">new</Link>
         </div>
         <div>
-          <Link to="/past">past</Link>
+          <Link to="/best">best</Link>
         </div>
         <div>comment</div>
         <div>ask</div>
