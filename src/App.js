@@ -5,7 +5,7 @@ import MainContent from "./Components/MainContent/MainContent";
 import ShowStories from "./Components/ShowStories/ShowStories";
 import Home from "./Components/Home/Home";
 
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 export default function App() {
   return (
@@ -13,8 +13,17 @@ export default function App() {
       <Navbar />
       <MainContent>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/:type" render={(props) => <ShowStories {...props} />} />
+          <Route exact path="/" render={() => <Redirect to="/top" />} />
+          <Route
+            path="/:type"
+            render={({ match }) => {
+              const { type } = match.params;
+              if (!["top", "new", "best"].includes(type)) {
+                return <Redirect to="/" />;
+              }
+              return <ShowStories type={type} />;
+            }}
+          />
           {/* <Route path="/:past" render={(props) => <ShowStories {...props} />} /> */}
         </Switch>
       </MainContent>

@@ -14,12 +14,22 @@
   margin-right: 15px;
 }
 
+.navbar-links > Link:not(:first-child) {
+  font-size: 12px;
+}
+
+.home-links > img {
+  border: 1px solid white;
+  margin: 0px 2px;
+}
+
 .navbar-links > div:not(:first-child) {
-  margin-right: 10px;
-  border-right: 1px solid black;
-  padding-right: 10px;
+  /* margin-right: 10px; */
+  /* border-right: 1px solid black; */
+  padding: 0px 5px;
 }
 
 .login {
   padding-right: 10px;
+  cursor: pointer;
 }

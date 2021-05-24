@@ -1,6 +1,11 @@
+.loading {
+  text-align: center;
+  font-size: 22px;
+}
+
 .list-container {
-  margin-left: 20px;
-  padding-top: 15px;
+  margin-left: 10px;
+  padding-top: 5px;
 }
 
 .news-title {
@@ -28,7 +33,7 @@ span {
 
 .statistics {
   display: inline-block;
-  margin-left: 25px;
+  margin-left: 20px;
   /* margin-top: -20px; */
 }
 

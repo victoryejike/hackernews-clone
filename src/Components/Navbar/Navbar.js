@@ -9,18 +9,22 @@ const Navbar = () => {
       <div className="navbar-links">
         <Link to="/">
           <div className="home-links">
-            <img src="y" alt="logo" />
+            <img src="https://news.ycombinator.com/y18.gif" alt="logo" />
             <h4>Hacker News</h4>
           </div>
         </Link>
         <div>
           <Link to="/new">new</Link>
         </div>
+        I
         <div>
           <Link to="/best">best</Link>
         </div>
-        <div>comment</div>
-        <div>ask</div>
+        I
+        <div>
+          <Link to="/top">top</Link>
+        </div>
+        {/* <div>ask</div> */}
       </div>
       <div className="login">login</div>
     </nav>
