@@ -3,7 +3,6 @@ import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import MainContent from "./Components/MainContent/MainContent";
 import ShowStories from "./Components/ShowStories/ShowStories";
-import Home from "./Components/Home/Home";
 
 import { Switch, Route, Redirect } from "react-router-dom";
 
