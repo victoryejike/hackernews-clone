@@ -34,10 +34,14 @@ const ShowStories = ({ type }) => {
                 <small className="statistics">
                   <span>{story.data.score} points</span>
                   <span>by {story.data.by}</span> I
-                  <span>
-                    by {new Date(`${story.data.by}`).toLocaleDateString}
-                  </span>{" "}
-                  I<span>{story.data.descendants} points</span>
+                  {story.data.time ? (
+                    <span>
+                      {new Date(story.data.time).toLocaleTimeString()}
+                    </span>
+                  ) : (
+                    <span>{story.data.time}</span>
+                  )}
+                  I <span>{story.data.descendants} points</span>
                 </small>
               </div>
             </div>
